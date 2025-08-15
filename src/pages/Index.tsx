@@ -54,9 +54,11 @@ const Index = () => {
                 <Icon name="Phone" size={18} />
                 <span className="font-semibold">8 800 51 140 45</span>
               </div>
-              <Button className="bg-warm-brown hover:bg-saddle-brown text-white hover-scale">
-                Консультация эксперта
-              </Button>
+              <a href="https://wa.me/79785140144" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-warm-brown hover:bg-saddle-brown text-white hover-scale">
+                  Консультация эксперта
+                </Button>
+              </a>
             </div>
           </div>
           
@@ -99,8 +101,8 @@ const Index = () => {
             </div>
             <div className="animate-scale-in">
               <img 
-                src="/img/553cd3d3-1dba-42d7-90b3-b5ed3b428c98.jpg" 
-                alt="Гардеробная из ясеня анкор темного"
+                src="/img/27db8bc2-96d8-43b0-9058-9097373a38a0.jpg" 
+                alt="Открытая гардеробная сонома с ящиками без ручек"
                 className="rounded-2xl shadow-2xl hover-scale"
               />
             </div>
@@ -186,19 +188,19 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image: "/img/553cd3d3-1dba-42d7-90b3-b5ed3b428c98.jpg",
-                title: "Шкаф-купе из ясеня анкор темного",
-                description: "Современный дизайн без ручек"
+                image: "/img/27db8bc2-96d8-43b0-9058-9097373a38a0.jpg",
+                title: "Открытая система хранения сонома",
+                description: "Ящики без ручек, открытые полки"
               },
               {
-                image: "/img/cffead57-74a9-4a89-889f-0ac2bef475ce.jpg",
+                image: "/img/965ffadc-8b0e-4ac6-8c68-3563d787b68f.jpg",
                 title: "Гардеробная с организованным хранением",
-                description: "Темный ясень анкор, без ручек на ящиках"
+                description: "Цвет сонома, без дверей и ручек"
               },
               {
-                image: "/img/db392dce-e831-4c6e-a270-4ecd9d7b1b0a.jpg",
-                title: "Угловой шкаф с раздвижными дверями",
-                description: "Минималистичный дизайн из темного дерева"
+                image: "/img/2e5f4b3f-6116-40a9-8e68-f23159197c20.jpg",
+                title: "Угловая открытая система хранения",
+                description: "Современный дизайн из светлого дерева"
               }
             ].map((work, index) => (
               <Card key={index} className="hover-scale hover:shadow-xl transition-all duration-300">
