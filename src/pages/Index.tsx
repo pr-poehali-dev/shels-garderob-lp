@@ -84,11 +84,11 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-5xl lg:text-6xl font-display font-bold text-dark-slate leading-tight mb-6">
-                Гардеробные в рассрочку <span className="text-warm-brown">0%</span> – без переплат!
+                Шкафы-купе в рассрочку <span className="text-warm-brown">0%</span> – без переплат!
               </h1>
               <p className="text-xl text-saddle-brown mb-8 leading-relaxed">
-                Создайте идеальную систему хранения с онлайн-конструктором! 
-                Никаких скрытых платежей и комиссий.
+                Создайте идеальный шкаф-купе с раздвижными дверями! 
+                Ящики без ручек, современный дизайн в цвете сонома.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://shelsmebel.ru/konstruktor-shkafy-kupe" target="_blank" rel="noopener noreferrer">
@@ -101,8 +101,8 @@ const Index = () => {
             </div>
             <div className="animate-scale-in">
               <img 
-                src="/img/27db8bc2-96d8-43b0-9058-9097373a38a0.jpg" 
-                alt="Открытая гардеробная сонома с ящиками без ручек"
+                src="/img/96b72f43-ddb1-4011-9455-db328f97f338.jpg" 
+                alt="Шкаф-купе цвета сонома с раздвижными дверями"
                 className="rounded-2xl shadow-2xl hover-scale"
               />
             </div>
@@ -188,19 +188,19 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image: "/img/27db8bc2-96d8-43b0-9058-9097373a38a0.jpg",
-                title: "Открытая система хранения сонома",
-                description: "Ящики без ручек, открытые полки"
+                image: "/img/96b72f43-ddb1-4011-9455-db328f97f338.jpg",
+                title: "Шкаф-купе цвета сонома",
+                description: "Раздвижные двери, ящики без ручек"
               },
               {
-                image: "/img/965ffadc-8b0e-4ac6-8c68-3563d787b68f.jpg",
-                title: "Гардеробная с организованным хранением",
-                description: "Цвет сонома, без дверей и ручек"
+                image: "/img/a40cccf0-a0be-439b-a6c9-a13eadb1ffce.jpg",
+                title: "Встроенная система хранения",
+                description: "Купе-двери, цвет сонома, без ручек"
               },
               {
-                image: "/img/2e5f4b3f-6116-40a9-8e68-f23159197c20.jpg",
-                title: "Угловая открытая система хранения",
-                description: "Современный дизайн из светлого дерева"
+                image: "/img/2594a1e1-f8fc-41dc-b0a6-e5650ffed44d.jpg",
+                title: "Угловой шкаф-купе",
+                description: "Раздвижные панели, светлое дерево"
               }
             ].map((work, index) => (
               <Card key={index} className="hover-scale hover:shadow-xl transition-all duration-300">
