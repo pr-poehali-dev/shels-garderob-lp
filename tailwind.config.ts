@@ -70,7 +70,7 @@ export default {
 			},
 			fontFamily: {
 				'display': ['Playfair Display', 'serif'],
-				'sans': ['Open Sans', 'sans-serif']
+				'sans': ['Montserrat', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

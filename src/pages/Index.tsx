@@ -41,8 +41,12 @@ const Index = () => {
       <header className="bg-white shadow-sm border-b border-wheat-beige/30">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="text-2xl font-display font-bold text-warm-brown">ShelsMebel</div>
+            <div className="flex items-center space-x-4">
+              <img 
+                src="https://cdn.poehali.dev/files/c8c91c77-2bb4-4532-b7d5-5967a2c34abf.png" 
+                alt="ShelsMebel логотип"
+                className="h-12"
+              />
               <div className="text-sm text-saddle-brown">Стильные гардеробные – удобные платежи!</div>
             </div>
             <div className="flex items-center space-x-4">
@@ -51,7 +55,7 @@ const Index = () => {
                 <span className="font-semibold">8 800 51 140 45</span>
               </div>
               <Button className="bg-warm-brown hover:bg-saddle-brown text-white hover-scale">
-                Бесплатный расчет
+                Консультация эксперта
               </Button>
             </div>
           </div>
@@ -85,20 +89,18 @@ const Index = () => {
                 Никаких скрытых платежей и комиссий.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-warm-brown hover:bg-saddle-brown text-white hover-scale text-lg px-8 py-4">
-                  <Icon name="Wrench" size={20} className="mr-2" />
-                  Спроектировать онлайн
-                </Button>
-                <Button size="lg" variant="outline" className="border-warm-brown text-warm-brown hover:bg-warm-brown hover:text-white text-lg px-8 py-4">
-                  <Icon name="Heart" size={20} className="mr-2" />
-                  Для молодоженов
-                </Button>
+                <a href="https://shelsmebel.ru/konstruktor-shkafy-kupe" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-warm-brown hover:bg-saddle-brown text-white hover-scale text-lg px-8 py-4 w-full">
+                    <Icon name="Wrench" size={20} className="mr-2" />
+                    Спроектировать онлайн
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="animate-scale-in">
               <img 
-                src="/img/7db68f43-b009-4228-8c76-bd47abc71b5b.jpg" 
-                alt="Элегантный шкаф-купе с зеркалами"
+                src="/img/553cd3d3-1dba-42d7-90b3-b5ed3b428c98.jpg" 
+                alt="Гардеробная из ясеня анкор темного"
                 className="rounded-2xl shadow-2xl hover-scale"
               />
             </div>
@@ -184,19 +186,19 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image: "/img/7db68f43-b009-4228-8c76-bd47abc71b5b.jpg",
-                title: "Шкаф-купе с зеркалами в спальню",
-                description: "Элегантное решение для спальни"
+                image: "/img/553cd3d3-1dba-42d7-90b3-b5ed3b428c98.jpg",
+                title: "Шкаф-купе из ясеня анкор темного",
+                description: "Современный дизайн без ручек"
               },
               {
-                image: "/img/0a4ab1ae-d964-4cf6-b84b-cf7fd1f7f0e2.jpg",
+                image: "/img/cffead57-74a9-4a89-889f-0ac2bef475ce.jpg",
                 title: "Гардеробная с организованным хранением",
-                description: "Максимум места для всех вещей"
+                description: "Темный ясень анкор, без ручек на ящиках"
               },
               {
-                image: "/img/13c951ef-2ad0-47d3-ac62-e306199de840.jpg",
+                image: "/img/db392dce-e831-4c6e-a270-4ecd9d7b1b0a.jpg",
                 title: "Угловой шкаф с раздвижными дверями",
-                description: "Идеально для небольших помещений"
+                description: "Минималистичный дизайн из темного дерева"
               }
             ].map((work, index) => (
               <Card key={index} className="hover-scale hover:shadow-xl transition-all duration-300">
@@ -374,7 +376,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-2xl font-display font-bold text-warm-brown mb-4">ShelsMebel</div>
+              <img 
+                src="https://cdn.poehali.dev/files/c8c91c77-2bb4-4532-b7d5-5967a2c34abf.png" 
+                alt="ShelsMebel логотип"
+                className="h-8 mb-4"
+              />
               <p className="text-gray-300 mb-4">
                 Гардеробные в рассрочку 0% – только до конца года!
               </p>
