@@ -47,26 +47,25 @@ const Index = () => {
                 alt="ShelsMebel логотип"
                 className="h-12"
               />
-              <div className="text-sm text-saddle-brown">Стильные гардеробные – удобные платежи!</div>
+              <div className="text-sm text-saddle-brown font-medium">Стильные гардеробные – удобные платежи!</div>
             </div>
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2 text-dark-slate">
-                <Icon name="Phone" size={18} />
-                <span className="font-semibold">8 800 51 140 45</span>
+              <div className="text-right">
+                <div className="text-lg font-bold text-dark-slate">8 800 51 140 45</div>
+                <div className="text-xs text-saddle-brown">Звонок бесплатный</div>
               </div>
-              <a href="https://wa.me/79785140144" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-warm-brown hover:bg-saddle-brown text-white hover-scale">
-                  Консультация эксперта
+              <a href="https://shelsmebel.ru/konstruktor-shkafy-kupe" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-warm-brown hover:bg-warm-brown/90 text-white">
+                  Бесплатный расчет
                 </Button>
               </a>
             </div>
           </div>
           
-          {/* Promotion Banner */}
-          <div className="mt-4 bg-gradient-to-r from-warm-brown to-saddle-brown text-white px-6 py-3 rounded-lg">
+          {/* Promo Banner */}
+          <div className="mt-4 bg-gradient-to-r from-warm-brown to-saddle-brown text-white rounded-lg p-4">
             <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-                <Icon name="Gift" size={20} />
+              <div className="flex-1">
                 <span className="font-semibold">Акция! Рассрочка 0% до 6 месяцев! Молодоженам – 12 месяцев!</span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
@@ -84,26 +83,29 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-5xl lg:text-6xl font-display font-bold text-dark-slate leading-tight mb-6">
-                Шкафы-купе в рассрочку <span className="text-warm-brown">0%</span> – без переплат!
+                Гардеробные в рассрочку <span className="text-warm-brown">0%</span> – без переплат!
               </h1>
               <p className="text-xl text-saddle-brown mb-8 leading-relaxed">
-                Создайте идеальный шкаф-купе с раздвижными дверями! 
-                Ящики без ручек, современный дизайн в цвете сонома.
+                Создайте идеальную систему хранения с онлайн-конструктором! 
+                Никаких скрытых платежей и комиссий.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://shelsmebel.ru/konstruktor-shkafy-kupe" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-warm-brown hover:bg-saddle-brown text-white hover-scale text-lg px-8 py-4 w-full">
-                    <Icon name="Wrench" size={20} className="mr-2" />
+                  <Button size="lg" className="bg-warm-brown hover:bg-warm-brown/90 text-white px-8 py-4 text-lg">
+                    <Icon name="PenTool" className="mr-2" size={20} />
                     Спроектировать онлайн
                   </Button>
                 </a>
+                <Button size="lg" variant="outline" className="border-warm-brown text-warm-brown hover:bg-warm-brown hover:text-white px-8 py-4 text-lg">
+                  Для молодоженов
+                </Button>
               </div>
             </div>
-            <div className="animate-scale-in">
+            <div className="animate-slide-up">
               <img 
-                src="/img/96b72f43-ddb1-4011-9455-db328f97f338.jpg" 
-                alt="Шкаф-купе цвета сонома с раздвижными дверями"
-                className="rounded-2xl shadow-2xl hover-scale"
+                src="/img/a9093b79-6e18-4311-bd0e-e08dfe208a41.jpg"
+                alt="Элегантная гардеробная с зеркалами"
+                className="rounded-2xl shadow-2xl w-full"
               />
             </div>
           </div>
@@ -111,109 +113,118 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-display font-bold text-center text-dark-slate mb-16">
+          <h2 className="text-4xl font-display font-bold text-center text-dark-slate mb-12">
             Почему выбирают нас?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: "CreditCard",
-                title: "Рассрочка 0% до 6 месяцев",
-                description: "Платите удобно без переплат и скрытых комиссий",
-                badge: "Популярно"
-              },
-              {
-                icon: "Heart",
-                title: "Для молодоженов – 12 месяцев",
-                description: "Специальное предложение для новых семей",
-                badge: "Эксклюзив"
-              },
-              {
-                icon: "Wrench",
-                title: "Онлайн-конструктор",
-                description: "Создайте дизайн за 5 минут прямо на сайте",
-                badge: "Бесплатно"
-              },
-              {
-                icon: "Shield",
-                title: "Гарантия 1 год",
-                description: "Надежные материалы и качественная сборка",
-                badge: null
-              },
-              {
-                icon: "Clock",
-                title: "Изготовление от 7 дней",
-                description: "Быстрое производство без задержек",
-                badge: null
-              },
-              {
-                icon: "Star",
-                title: "500+ довольных клиентов",
-                description: "Реальные отзывы и высокие оценки",
-                badge: null
-              }
-            ].map((benefit, index) => (
-              <Card key={index} className="hover-scale hover:shadow-lg transition-all duration-300 border-wheat-beige/50">
-                <CardContent className="p-6 text-center">
-                  <div className="relative mb-4">
-                    <div className="w-16 h-16 bg-warm-brown/10 rounded-full flex items-center justify-center mx-auto">
-                      <Icon name={benefit.icon} size={32} className="text-warm-brown" />
-                    </div>
-                    {benefit.badge && (
-                      <Badge className="absolute -top-2 -right-2 bg-saddle-brown text-white">
-                        {benefit.badge}
-                      </Badge>
-                    )}
-                  </div>
-                  <h3 className="text-xl font-semibold text-dark-slate mb-3">{benefit.title}</h3>
-                  <p className="text-saddle-brown">{benefit.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="text-center p-6 border-wheat-beige/30 hover:shadow-lg transition-shadow">
+              <CardContent className="space-y-4">
+                <div className="w-16 h-16 bg-warm-brown/10 rounded-full flex items-center justify-center mx-auto">
+                  <Icon name="CreditCard" size={32} className="text-warm-brown" />
+                </div>
+                <h3 className="text-xl font-semibold text-dark-slate">Рассрочка 0% до 6 месяцев</h3>
+                <p className="text-saddle-brown">Платите удобно без переплат и скрытых комиссий!</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center p-6 border-wheat-beige/30 hover:shadow-lg transition-shadow">
+              <CardContent className="space-y-4">
+                <div className="w-16 h-16 bg-warm-brown/10 rounded-full flex items-center justify-center mx-auto">
+                  <Icon name="Heart" size={32} className="text-warm-brown" />
+                </div>
+                <h3 className="text-xl font-semibold text-dark-slate">Для молодоженов – 12 месяцев</h3>
+                <p className="text-saddle-brown">Специальное предложение для новой семьи!</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center p-6 border-wheat-beige/30 hover:shadow-lg transition-shadow">
+              <CardContent className="space-y-4">
+                <div className="w-16 h-16 bg-warm-brown/10 rounded-full flex items-center justify-center mx-auto">
+                  <Icon name="Monitor" size={32} className="text-warm-brown" />
+                </div>
+                <h3 className="text-xl font-semibold text-dark-slate">Онлайн-конструктор</h3>
+                <p className="text-saddle-brown">Создайте дизайн за 5 минут прямо в браузере!</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center p-6 border-wheat-beige/30 hover:shadow-lg transition-shadow">
+              <CardContent className="space-y-4">
+                <div className="w-16 h-16 bg-warm-brown/10 rounded-full flex items-center justify-center mx-auto">
+                  <Icon name="Shield" size={32} className="text-warm-brown" />
+                </div>
+                <h3 className="text-xl font-semibold text-dark-slate">Гарантия 1 год</h3>
+                <p className="text-saddle-brown">Надежные материалы и качественная сборка!</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center p-6 border-wheat-beige/30 hover:shadow-lg transition-shadow">
+              <CardContent className="space-y-4">
+                <div className="w-16 h-16 bg-warm-brown/10 rounded-full flex items-center justify-center mx-auto">
+                  <Icon name="Clock" size={32} className="text-warm-brown" />
+                </div>
+                <h3 className="text-xl font-semibold text-dark-slate">Изготовление от 7 дней</h3>
+                <p className="text-saddle-brown">Быстрое производство без задержек!</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center p-6 border-wheat-beige/30 hover:shadow-lg transition-shadow">
+              <CardContent className="space-y-4">
+                <div className="w-16 h-16 bg-warm-brown/10 rounded-full flex items-center justify-center mx-auto">
+                  <Icon name="Wrench" size={32} className="text-warm-brown" />
+                </div>
+                <h3 className="text-xl font-semibold text-dark-slate">Профессиональная установка</h3>
+                <p className="text-saddle-brown">Опытные мастера установят идеально!</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 bg-wheat-beige/20">
+      <section className="py-16 bg-gradient-to-br from-wheat-beige to-warm-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-display font-bold text-center text-dark-slate mb-6">
+          <h2 className="text-4xl font-display font-bold text-center text-dark-slate mb-4">
             Примеры наших работ
           </h2>
-          <p className="text-center text-saddle-brown text-xl mb-16">
+          <p className="text-center text-saddle-brown mb-12 text-lg">
             Реальные проекты для наших клиентов!
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 image: "/img/96b72f43-ddb1-4011-9455-db328f97f338.jpg",
-                title: "Шкаф-купе цвета сонома",
-                description: "Раздвижные двери, ящики без ручек"
+                title: "Шкаф-купе с зеркалами в спальню",
+                description: "Раздвижные зеркальные двери, встроенная подсветка"
               },
               {
                 image: "/img/a40cccf0-a0be-439b-a6c9-a13eadb1ffce.jpg",
-                title: "Встроенная система хранения",
-                description: "Купе-двери, цвет сонома, без ручек"
+                title: "Гардеробная с пескоструйным рисунком",
+                description: "Стильные узоры на стекле, цвет сонома"
               },
               {
                 image: "/img/2594a1e1-f8fc-41dc-b0a6-e5650ffed44d.jpg",
-                title: "Угловой шкаф-купе",
-                description: "Раздвижные панели, светлое дерево"
+                title: "Угловой шкаф с раздвижными дверями",
+                description: "Максимальное использование пространства"
+              },
+              {
+                image: "/img/a9093b79-6e18-4311-bd0e-e08dfe208a41.jpg",
+                title: "Вместительная система хранения в прихожую",
+                description: "Организованное хранение для всей семьи"
               }
-            ].map((work, index) => (
-              <Card key={index} className="hover-scale hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
+            ].map((item, index) => (
+              <Card key={index} className="overflow-hidden border-wheat-beige/30 hover:shadow-lg transition-shadow">
+                <div className="aspect-square overflow-hidden">
                   <img 
-                    src={work.image} 
-                    alt={work.title}
-                    className="w-full h-64 object-cover rounded-t-lg"
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-dark-slate mb-2">{work.title}</h3>
-                    <p className="text-saddle-brown">{work.description}</p>
-                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold text-dark-slate mb-2">{item.title}</h3>
+                  <p className="text-sm text-saddle-brown">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -221,154 +232,151 @@ const Index = () => {
         </div>
       </section>
 
-      {/* How to Get Installment Section */}
-      <section className="py-20 bg-white">
+      {/* How to get installment */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-display font-bold text-center text-dark-slate mb-16">
+          <h2 className="text-4xl font-display font-bold text-center text-dark-slate mb-12">
             Как получить рассрочку?
           </h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              {
-                step: "1",
-                icon: "Wrench",
-                title: "Проектирование",
-                description: "Спроектируйте в онлайн-конструкторе или оставьте заявку"
-              },
-              {
-                step: "2",
-                icon: "Ruler",
-                title: "Замер",
-                description: "Подтвердите замер при необходимости"
-              },
-              {
-                step: "3",
-                icon: "FileText",
-                title: "Оформление",
-                description: "Договор с рассрочкой 0% до 6-12 месяцев"
-              },
-              {
-                step: "4",
-                icon: "Home",
-                title: "Установка",
-                description: "Быстрое производство и профессиональная установка"
-              }
-            ].map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-warm-brown to-saddle-brown rounded-full flex items-center justify-center mx-auto shadow-lg">
-                    <Icon name={step.icon} size={32} className="text-white" />
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-dark-slate text-white rounded-full flex items-center justify-center text-sm font-bold">
-                    {step.step}
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold text-dark-slate mb-3">{step.title}</h3>
-                <p className="text-saddle-brown">{step.description}</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-warm-brown text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                1
               </div>
-            ))}
+              <h3 className="text-lg font-semibold text-dark-slate mb-2">Спроектируйте</h3>
+              <p className="text-saddle-brown">В онлайн-конструкторе или оставьте заявку</p>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-warm-brown text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                2
+              </div>
+              <h3 className="text-lg font-semibold text-dark-slate mb-2">Подтвердите</h3>
+              <p className="text-saddle-brown">Замер при необходимости</p>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-warm-brown text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                3
+              </div>
+              <h3 className="text-lg font-semibold text-dark-slate mb-2">Оформите</h3>
+              <p className="text-saddle-brown">Договор – рассрочка 0% до 6 месяцев</p>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-warm-brown text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                4
+              </div>
+              <h3 className="text-lg font-semibold text-dark-slate mb-2">Получите</h3>
+              <p className="text-saddle-brown">Быстрое производство и установка</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-wheat-beige/20">
+      {/* Reviews Section */}
+      <section className="py-16 bg-gradient-to-br from-warm-white to-wheat-beige">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-display font-bold text-center text-dark-slate mb-16">
-            Отзывы наших клиентов
+          <h2 className="text-4xl font-display font-bold text-center text-dark-slate mb-12">
+            Отзывы клиентов
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Ольга",
-                city: "Симферополь",
-                text: "Заказали шкаф в рассрочку – очень довольны! Качество отличное, установили быстро. Спасибо!",
-                rating: 5
-              },
-              {
-                name: "Иван",
-                city: "Керчь",
-                text: "Понравился онлайн-конструктор – сразу увидели, как будет выглядеть шкаф. Очень удобно!",
-                rating: 5
-              },
-              {
-                name: "Анастасия",
-                city: "Ялта",
-                text: "Молодоженам дали 12 месяцев рассрочки – отличное предложение! Рекомендуем всем.",
-                rating: 5
-              }
-            ].map((review, index) => (
-              <Card key={index} className="hover-scale">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Icon key={i} name="Star" size={20} className="text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-saddle-brown mb-4 italic">"{review.text}"</p>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-10 h-10 bg-warm-brown/20 rounded-full flex items-center justify-center">
-                      <Icon name="User" size={20} className="text-warm-brown" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-dark-slate">{review.name}</div>
-                      <div className="text-sm text-saddle-brown">{review.city}</div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="p-6 border-wheat-beige/30">
+              <CardContent className="space-y-4">
+                <div className="flex items-center space-x-1">
+                  {[1,2,3,4,5].map(i => (
+                    <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-saddle-brown italic">
+                  "Заказали шкаф в рассрочку – очень довольны! Спасибо!"
+                </p>
+                <div className="text-right">
+                  <p className="font-semibold text-dark-slate">Ольга</p>
+                  <p className="text-sm text-saddle-brown">Симферополь</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border-wheat-beige/30">
+              <CardContent className="space-y-4">
+                <div className="flex items-center space-x-1">
+                  {[1,2,3,4,5].map(i => (
+                    <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-saddle-brown italic">
+                  "Понравился онлайн-конструктор – сразу увидели, как будет выглядеть шкаф."
+                </p>
+                <div className="text-right">
+                  <p className="font-semibold text-dark-slate">Иван</p>
+                  <p className="text-sm text-saddle-brown">Керчь</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border-wheat-beige/30">
+              <CardContent className="space-y-4">
+                <div className="flex items-center space-x-1">
+                  {[1,2,3,4,5].map(i => (
+                    <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-saddle-brown italic">
+                  "Молодоженам дали 12 месяцев рассрочки – отличное предложение!"
+                </p>
+                <div className="text-right">
+                  <p className="font-semibold text-dark-slate">Анастасия</p>
+                  <p className="text-sm text-saddle-brown">Ялта</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-gradient-to-br from-warm-brown to-saddle-brown text-white">
+      <section className="py-16 bg-warm-brown text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-display font-bold mb-6">
+            <h2 className="text-4xl font-display font-bold mb-4">
               Получите расчет за 5 минут + рассрочку 0%
             </h2>
-            <p className="text-xl mb-8 opacity-90">
-              до конца 2025 года!
+            <p className="text-lg mb-8 opacity-90">
+              До конца 2025 года!
             </p>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid md:grid-cols-3 gap-4">
                 <Input
                   placeholder="Ваше имя"
                   value={formData.name}
                   onChange={(e) => handleInputChange('name', e.target.value)}
                   className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-                  required
                 />
                 <Input
                   placeholder="Телефон"
-                  type="tel"
                   value={formData.phone}
                   onChange={(e) => handleInputChange('phone', e.target.value)}
                   className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-                  required
                 />
                 <Input
                   placeholder="Город"
                   value={formData.city}
                   onChange={(e) => handleInputChange('city', e.target.value)}
                   className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-                  required
                 />
               </div>
+              
               <Button 
                 type="submit" 
-                size="lg"
-                className="bg-white text-warm-brown hover:bg-wheat-beige hover:text-saddle-brown font-semibold px-12 py-4 hover-scale"
+                size="lg" 
+                className="bg-white text-warm-brown hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
               >
-                <Icon name="Calculator" size={20} className="mr-2" />
                 Рассчитать стоимость
               </Button>
-              <p className="text-sm opacity-75">
-                Акция действует до 31.12.2025
-              </p>
             </form>
+            
+            <p className="text-sm mt-4 opacity-70">
+              Акция действует до 31.12.2025
+            </p>
           </div>
         </div>
       </section>
@@ -380,45 +388,41 @@ const Index = () => {
             <div>
               <img 
                 src="https://cdn.poehali.dev/files/c8c91c77-2bb4-4532-b7d5-5967a2c34abf.png" 
-                alt="ShelsMebel логотип"
-                className="h-8 mb-4"
+                alt="ShelsMebel"
+                className="h-12 mb-4 filter brightness-0 invert"
               />
               <p className="text-gray-300 mb-4">
                 Гардеробные в рассрочку 0% – только до конца года!
               </p>
-              <div className="flex space-x-4">
-                <a href="https://vk.com/shels.mebel" className="text-gray-300 hover:text-warm-brown transition-colors">
-                  <Icon name="Facebook" size={24} />
-                </a>
-              </div>
             </div>
+            
             <div>
-              <h3 className="text-lg font-semibold mb-4">Контакты</h3>
+              <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-center space-x-2">
                   <Icon name="Phone" size={16} />
                   <span>8 800 51 140 45</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Icon name="MapPin" size={16} />
-                  <span>Крым, вся территория</span>
+                  <Icon name="ExternalLink" size={16} />
+                  <a href="https://shelsmebel.ru/konstruktor-shkafy-kupe" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                    Онлайн-конструктор
+                  </a>
                 </div>
               </div>
             </div>
+            
             <div>
-              <h3 className="text-lg font-semibold mb-4">Услуги</h3>
-              <div className="space-y-2 text-gray-300">
-                <a href="https://shelsmebel.ru/konstruktor-shkafy-kupe" className="block hover:text-warm-brown transition-colors story-link">
-                  Онлайн-конструктор
-                </a>
-                <div>Гардеробные на заказ</div>
-                <div>Шкафы-купе с зеркалами</div>
-                <div>Рассрочка 0%</div>
-              </div>
+              <h4 className="font-semibold mb-4">Мы в соцсетях</h4>
+              <a href="https://vk.com/shels.mebel" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white flex items-center space-x-2">
+                <Icon name="ExternalLink" size={16} />
+                <span>VK: shels.mebel</span>
+              </a>
             </div>
           </div>
-          <div className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
-            <p>© 2025 ShelsMebel. Все права защищены.</p>
+          
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 ShelsMebel. Все права защищены.</p>
           </div>
         </div>
       </footer>
